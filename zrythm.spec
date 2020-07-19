@@ -7,12 +7,14 @@ License:       GPLv3
 URL:           https://www.zrythm.org
 Source0:       https://github.com/zrythm/zrythm/archive/v%{version}/%{name}-%{version}.tar.gz
 
+BuildRequires: git
 BuildRequires: gettext
 BuildRequires: python
 BuildRequires: sed
 BuildRequires: ffmpeg-devel
 BuildRequires: ladspa-devel
 BuildRequires: pkgconfig(gtk+-3.0)
+BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(guile-3.0)
 BuildRequires: pkgconfig(libgtop-2.0)
 BuildRequires: pkgconfig(lilv-0)
@@ -30,7 +32,9 @@ BuildRequires: pkgconfig(Qt5Gui)
 BuildRequires: pkgconfig(Qt5Widgets)
 BuildRequires: pkgconfig(libxdot)
 BuildRequires: python3dist(sphinx)
+BuildRequires: python3dist(pypandoc)
 BuildRequires: help2man
+BuildRequires: texi2html
 BuildRequires: xdg-utils
 BuildRequires: meson
 Requires:      ladspa
