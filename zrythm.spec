@@ -1,32 +1,14 @@
-#
-# spec file for package zrythm based on that for loopidity
-#
-# Copyright (c) 2012-2107 bill-auger bill-auger@programmer.net
-#
-# All modifications and additions to the file contributed by third parties
-# remain the property of their copyright owners, unless otherwise agreed
-# upon. The license for this file, and modifications and additions to the
-# file, is the same license as for the pristine package itself (unless the
-# license for the pristine package is not an Open Source License, in which
-# case the license is the MIT License). An "Open Source License" is a
-# license that conforms to the Open Source Definition (Version 1.9)
-# published by the Open Source Initiative.
-
-# Please submit bugfixes or comments via http://bugs.opensuse.org/
-
-
 Name:          zrythm
-Version:       0.6.003
-Release:       %mkrel 4
+Version:       0.8.694
+Release:       1
 Summary:       A highly automated, intuitive, Digital Audio Workstation (DAW)
 Group:         Sound/Editors and Converters
 License:       GPLv3
 URL:           https://www.zrythm.org
-Source0:       https://git.zrythm.org/cgit/%{name}/snapshot/%{name}-%{version}.tar.gz
-BuildRequires: gcc-c++
-BuildRequires: gcc
+Source0:       https://github.com/zrythm/zrythm/archive/v%{version}/%{name}-%{version}.tar.gz
+
 BuildRequires: gettext
-BuildRequires: python3
+BuildRequires: python
 BuildRequires: sed
 BuildRequires: ffmpeg-devel
 BuildRequires: ladspa-devel
@@ -58,9 +40,8 @@ the GTK+3 toolkit and using the JACK Connection Kit for audio I/O.
 Zrythm can automate plugin parameters using built in LFOs and envelopes
 and is designed to be intuitive to use.
 
-
 %prep
-%autosetup
+%autosetup -p1
 
 %build
 %meson -Denable_tests=true \
