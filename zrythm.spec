@@ -28,6 +28,8 @@ BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: pkgconfig(Qt5Gui)
 BuildRequires: pkgconfig(Qt5Widgets)
 BuildRequires: pkgconfig(libxdot)
+BuildRequires: python3dist(sphinx)
+BuildRequires: help2man
 BuildRequires: xdg-utils
 BuildRequires: meson
 Requires:      ladspa
