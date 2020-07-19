@@ -27,6 +27,8 @@ BuildRequires: pkgconfig(x11)
 BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: pkgconfig(Qt5Gui)
 BuildRequires: pkgconfig(Qt5Widgets)
+BuildRequires: pkgconfig(libxdot)
+BuildRequires: xdg-utils
 BuildRequires: meson
 Requires:      ladspa
 Requires:      lilv
