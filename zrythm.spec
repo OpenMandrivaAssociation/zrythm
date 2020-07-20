@@ -23,12 +23,15 @@ BuildRequires: pkgconfig(libgtop-2.0)
 BuildRequires: pkgconfig(lilv-0)
 BuildRequires: pkgconfig(lv2)
 BuildRequires: pkgconfig(sndfile)
+BuildRequires: pkgconfig(sdl2)
 BuildRequires: pkgconfig(yaml-0.1)
 BuildRequires: pkgconfig(libcyaml)
 BuildRequires: pkgconfig(samplerate)
 BuildRequires: pkgconfig(alsa)
 BuildRequires: pkgconfig(fftw3)
 BuildRequires: pkgconfig(portaudio-2.0)
+BuildRequires: pkgconfig(rtmidi)
+BuildRequires: pkgconfig(rtaudio)
 BuildRequires: pkgconfig(jack)
 BuildRequires: pkgconfig(x11)
 BuildRequires: pkgconfig(Qt5Core)
@@ -59,6 +62,7 @@ and is designed to be intuitive to use.
 %build
 %meson -Denable_tests=true \
        -Denable_ffmpeg=true \
+       -Dffmpeg=enabled \
        -Denable_qt5=true
 %meson_build
 
