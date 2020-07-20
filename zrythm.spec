@@ -65,6 +65,9 @@ and is designed to be intuitive to use.
 %meson -Denable_tests=true \
        -Denable_ffmpeg=true \
        -Dffmpeg=enabled \
+       -Drtmidi=enabled \
+       -Drtaudio=enabled \
+       -Dsdl=enabled \
        -Denable_qt5=true
 %meson_build
 
