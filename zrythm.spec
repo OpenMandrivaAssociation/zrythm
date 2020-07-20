@@ -40,6 +40,7 @@ BuildRequires: pkgconfig(Qt5Widgets)
 BuildRequires: pkgconfig(libxdot)
 BuildRequires: python3dist(sphinx)
 BuildRequires: python3dist(pypandoc)
+BuildRequires: pkgconfig(libzstd)
 BuildRequires: help2man
 BuildRequires: texi2html
 BuildRequires: xdg-utils
