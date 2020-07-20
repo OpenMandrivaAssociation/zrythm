@@ -14,9 +14,11 @@ BuildRequires: sed
 BuildRequires: ffmpeg-devel
 BuildRequires: ladspa-devel
 BuildRequires: pkgconfig(gtk+-3.0)
+BuildRequires: pkgconfig(gtksourceview-4)
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(guile-3.0)
 BuildRequires: pkgconfig(audec)
+BuildRequires: pkgconfig(libchromaprint)
 BuildRequires: pkgconfig(libgtop-2.0)
 BuildRequires: pkgconfig(lilv-0)
 BuildRequires: pkgconfig(lv2)
