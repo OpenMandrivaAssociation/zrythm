@@ -21,7 +21,7 @@ BuildRequires: pkgconfig(lilv-0)
 BuildRequires: pkgconfig(lv2)
 BuildRequires: pkgconfig(sndfile)
 BuildRequires: pkgconfig(yaml-0.1)
-BuildRequires: pkgconfig(libcyaml)a
+BuildRequires: pkgconfig(libcyaml)
 BuildRequires: pkgconfig(samplerate)
 BuildRequires: pkgconfig(alsa)
 BuildRequires: pkgconfig(fftw3)
