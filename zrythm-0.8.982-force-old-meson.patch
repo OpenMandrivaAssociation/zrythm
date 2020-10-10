@@ -1,0 +1,12 @@
+diff -uraN zrythm-0.8.982/meson.build omv-zrythm-0.8.982/meson.build
+--- zrythm-0.8.982/meson.build	2020-09-15 17:18:59.000000000 +0200
++++ omv-zrythm-0.8.982/meson.build	2020-10-10 20:09:31.835157618 +0200
+@@ -19,7 +19,7 @@
+   'zrythm', ['c', 'cpp'],
+   version: '0.8.982',
+   license: 'AGPL-3-or-later',
+-  meson_version: '>= 0.55.0',
++  meson_version: '>= 0.54.3,
+   default_options: [
+     'warning_level=2',
+     'buildtype=debugoptimized',
