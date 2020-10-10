@@ -1,5 +1,5 @@
 Name:          zrythm
-Version:       0.8.694
+Version:       0.8.982
 Release:       1
 Summary:       A highly automated, intuitive, Digital Audio Workstation (DAW)
 Group:         Sound/Editors and Converters
