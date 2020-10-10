@@ -6,6 +6,7 @@ Group:         Sound/Editors and Converters
 License:       GPLv3
 URL:           https://www.zrythm.org
 Source0:       https://github.com/zrythm/zrythm/archive/v%{version}/%{name}-%{version}.tar.gz
+Patch0:        zrythm-0.8.982-force-old-meson.patch
 
 BuildRequires: git
 BuildRequires: gettext
