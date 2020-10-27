@@ -7,6 +7,7 @@ License:       GPLv3
 URL:           https://www.zrythm.org
 Source0:       https://github.com/zrythm/zrythm/archive/v%{version}/%{name}-%{version}.tar.gz
 
+BuildRequires: reproc
 BuildRequires: git
 BuildRequires: gettext
 BuildRequires: python
