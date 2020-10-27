@@ -7,7 +7,6 @@ License:       GPLv3
 URL:           https://www.zrythm.org
 Source0:       https://github.com/zrythm/zrythm/archive/v%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires: reproc
 BuildRequires: git
 BuildRequires: gettext
 BuildRequires: python
@@ -31,6 +30,7 @@ BuildRequires: pkgconfig(samplerate)
 BuildRequires: pkgconfig(alsa)
 BuildRequires: pkgconfig(fftw3)
 BuildRequires: pkgconfig(portaudio-2.0)
+BuildRequires: pkgconfig(reproc)
 BuildRequires: pkgconfig(rtmidi)
 BuildRequires: pkgconfig(rtaudio)
 BuildRequires: pkgconfig(rubberband)
