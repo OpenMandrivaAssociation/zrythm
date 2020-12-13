@@ -69,6 +69,7 @@ and is designed to be intuitive to use.
        -Drtmidi=enabled \
        -Drtaudio=enabled \
        -Dsdl=enabled \
+       -Dlsp_dsp=disabled \
        -Denable_qt5=true
 %meson_build
 
