@@ -43,6 +43,7 @@ BuildRequires: pkgconfig(libxdot)
 BuildRequires: python3dist(sphinx)
 BuildRequires: python3dist(pypandoc)
 BuildRequires: pkgconfig(libzstd)
+BuildRequires: pkgconfig(lsp-dsp-lib)
 BuildRequires: help2man
 BuildRequires: texi2html
 BuildRequires: xdg-utils
@@ -69,7 +70,7 @@ and is designed to be intuitive to use.
        -Drtmidi=enabled \
        -Drtaudio=enabled \
        -Dsdl=enabled \
-       -Dlsp_dsp=disabled \
+       -Dlsp_dsp=enabled \
        -Denable_qt5=true
 %meson_build
 
