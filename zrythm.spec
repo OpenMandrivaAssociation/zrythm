@@ -14,7 +14,7 @@ BuildRequires: sed
 BuildRequires: ffmpeg-devel
 BuildRequires: ladspa-devel
 BuildRequires: graphviz-devel
-BuildRequires: carla-devel
+#BuildRequires: carla-devel
 BuildRequires: pkgconfig(gtk+-3.0)
 BuildRequires: pkgconfig(gtksourceview-4)
 BuildRequires: pkgconfig(glib-2.0)
@@ -73,7 +73,6 @@ and is designed to be intuitive to use.
        -Drtaudio=enabled \
        -Dsdl=enabled \
        -Dlsp_dsp=enabled \
-       -Dcarla=enabled \
        -Dgraphviz=enabled \
        -Denable_qt5=true \
        --buildtype=release
