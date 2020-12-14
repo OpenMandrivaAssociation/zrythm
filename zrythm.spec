@@ -1,5 +1,5 @@
 Name:          zrythm
-Version:       0.8.694
+Version:       0.8.982
 Release:       1
 Summary:       A highly automated, intuitive, Digital Audio Workstation (DAW)
 Group:         Sound/Editors and Converters
@@ -13,6 +13,8 @@ BuildRequires: python
 BuildRequires: sed
 BuildRequires: ffmpeg-devel
 BuildRequires: ladspa-devel
+BuildRequires: graphviz-devel
+#BuildRequires: carla-devel
 BuildRequires: pkgconfig(gtk+-3.0)
 BuildRequires: pkgconfig(gtksourceview-4)
 BuildRequires: pkgconfig(glib-2.0)
@@ -30,6 +32,7 @@ BuildRequires: pkgconfig(samplerate)
 BuildRequires: pkgconfig(alsa)
 BuildRequires: pkgconfig(fftw3)
 BuildRequires: pkgconfig(portaudio-2.0)
+BuildRequires: pkgconfig(reproc)
 BuildRequires: pkgconfig(rtmidi)
 BuildRequires: pkgconfig(rtaudio)
 BuildRequires: pkgconfig(rubberband)
@@ -42,6 +45,7 @@ BuildRequires: pkgconfig(libxdot)
 BuildRequires: python3dist(sphinx)
 BuildRequires: python3dist(pypandoc)
 BuildRequires: pkgconfig(libzstd)
+BuildRequires: pkgconfig(lsp-dsp-lib)
 BuildRequires: help2man
 BuildRequires: texi2html
 BuildRequires: xdg-utils
@@ -68,7 +72,11 @@ and is designed to be intuitive to use.
        -Drtmidi=enabled \
        -Drtaudio=enabled \
        -Dsdl=enabled \
-       -Denable_qt5=true
+       -Dlsp_dsp=enabled \
+       -Dgraphviz=enabled \
+       -Denable_qt5=true \
+       --buildtype=release
+
 %meson_build
 
 %install
