@@ -55,6 +55,7 @@ Requires:      lilv
 Requires:      lv2
 Requires:      fftw
 Requires:      jackit
+Requires:      %{_libdir}lsp-dsp-lib
 
 %description
 Zrythm is a native GNU/Linux application built with
