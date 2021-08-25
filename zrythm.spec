@@ -1,6 +1,6 @@
 Name:          zrythm
 Version:       0.8.982
-Release:       2
+Release:       3
 Summary:       A highly automated, intuitive, Digital Audio Workstation (DAW)
 Group:         Sound/Editors and Converters
 License:       GPLv3
@@ -55,7 +55,7 @@ Requires:      lilv
 Requires:      lv2
 Requires:      fftw
 Requires:      jackit
-Requires:      %{_libdir}lsp-dsp-lib
+Requires:      %{_lib}lsp-dsp-lib
 
 %description
 Zrythm is a native GNU/Linux application built with
