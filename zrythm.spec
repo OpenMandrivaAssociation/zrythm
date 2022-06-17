@@ -21,7 +21,9 @@ BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(guile-3.0)
 BuildRequires: pkgconfig(audec)
 BuildRequires: pkgconfig(libchromaprint)
+BuildRequires: pkgconfig(libfl)
 BuildRequires: pkgconfig(libgtop-2.0)
+BuildRequires: pkgconfig(libsass)
 BuildRequires: pkgconfig(lilv-0)
 BuildRequires: pkgconfig(lv2)
 BuildRequires: pkgconfig(sndfile)
@@ -46,6 +48,7 @@ BuildRequires: python3dist(sphinx)
 BuildRequires: python3dist(pypandoc)
 BuildRequires: pkgconfig(libzstd)
 BuildRequires: pkgconfig(lsp-dsp-lib)
+BuildRequires: jq-devel
 BuildRequires: help2man
 BuildRequires: texi2html
 BuildRequires: xdg-utils
