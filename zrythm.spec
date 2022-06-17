@@ -1,6 +1,6 @@
 Name:          zrythm
-Version:       0.8.982
-Release:       3
+Version:       1.0.0
+Release:       0.beta.2.1.1.0
 Summary:       A highly automated, intuitive, Digital Audio Workstation (DAW)
 Group:         Sound/Editors and Converters
 License:       GPLv3
@@ -64,7 +64,7 @@ Zrythm can automate plugin parameters using built in LFOs and envelopes
 and is designed to be intuitive to use.
 
 %prep
-%autosetup -p1
+%autosetup -n %{name}-%{version}-beta.2.1.1 -p1
 
 %build
 %meson -Denable_tests=true \
