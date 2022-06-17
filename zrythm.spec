@@ -67,15 +67,12 @@ and is designed to be intuitive to use.
 %autosetup -n %{name}-%{version}-beta.2.1.1 -p1
 
 %build
-%meson -Denable_tests=true \
-       -Denable_ffmpeg=true \
-       -Dffmpeg=enabled \
+%meson \
        -Drtmidi=enabled \
        -Drtaudio=enabled \
        -Dsdl=enabled \
        -Dlsp_dsp=enabled \
        -Dgraphviz=enabled \
-       -Denable_qt5=true \
        --buildtype=release
 
 %meson_build
