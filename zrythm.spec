@@ -49,6 +49,7 @@ BuildRequires: python3dist(sphinx)
 BuildRequires: python3dist(pypandoc)
 BuildRequires: pkgconfig(libzstd)
 BuildRequires: pkgconfig(lsp-dsp-lib)
+BuildRequires: libxml2-utils
 BuildRequires: jq-devel
 BuildRequires: help2man
 BuildRequires: texi2html
