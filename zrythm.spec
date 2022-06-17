@@ -15,7 +15,7 @@ BuildRequires: ffmpeg-devel
 BuildRequires: ladspa-devel
 BuildRequires: graphviz-devel
 #BuildRequires: carla-devel
-BuildRequires: pkgconfig(gtk+-3.0)
+BuildRequires: pkgconfig(gtk4)
 BuildRequires: pkgconfig(gtksourceview-4)
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(guile-3.0)
