@@ -103,10 +103,10 @@ and is designed to be intuitive to use.
 %files -f %{name}.lang
 %license COPYING
 %doc README.md CONTRIBUTING.md CHANGELOG.md
-%{_sysconfdir}/bash_completion.d/zrythm
+#{_sysconfdir}/bash_completion.d/zrythm
 %{_bindir}/%{name}
 %{_bindir}/zrythm_launch
-%{_datadir}/applications/%{name}.desktop
+#{_datadir}/applications/%{name}.desktop
 %{_datadir}/fonts/%{name}
 %{_datadir}/glib-2.0/schemas/*.xml
 %{_iconsdir}/hicolor/scalable/apps/%{name}.svg
