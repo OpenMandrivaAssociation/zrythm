@@ -14,6 +14,7 @@ BuildRequires: python
 BuildRequires: sed
 BuildRequires: sassc
 BuildRequires: backstrace-devel
+BuildRequires: boost-devel
 BuildRequires: ffmpeg-devel
 BuildRequires: ladspa-devel
 BuildRequires: graphviz-devel
