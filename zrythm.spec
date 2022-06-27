@@ -106,7 +106,7 @@ and is designed to be intuitive to use.
 %{_bindir}/%{name}*
 %{_libdir}/zrythm/carla/
 %{_libdir}/zrythm/lv2
-%{_datadir}/applications/applications/org.zrythm.Zrythm.desktop
+%{_datadir}/applications/org.zrythm.Zrythm.desktop
 %{_datadir}/fonts/%{name}
 %{_datadir}/glib-2.0/schemas/*.xml
 %{_iconsdir}/hicolor/scalable/apps/%{name}.svg
