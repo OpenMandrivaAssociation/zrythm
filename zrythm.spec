@@ -7,6 +7,7 @@ License:       GPLv3
 URL:           https://www.zrythm.org
 Source0:       https://github.com/zrythm/zrythm/archive/v%{version}-beta.2.1.1/%{name}-%{version}-beta.2.1.1.tar.gz
 
+BuildRequires: appstream
 BuildRequires: appstream-util
 BuildRequires: git
 BuildRequires: gettext
