@@ -68,6 +68,7 @@ BuildRequires: help2man
 BuildRequires: texi2html
 BuildRequires: xdg-utils
 BuildRequires: meson
+Requires:      carla
 Requires:      ladspa
 Requires:      lilv
 Requires:      lv2
