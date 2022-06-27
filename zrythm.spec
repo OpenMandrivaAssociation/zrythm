@@ -89,7 +89,7 @@ and is designed to be intuitive to use.
        -Drtmidi=enabled \
        -Drtaudio=enabled \
        -Dsdl=enabled \
-       -Dlsp_dsp=enabled \
+       -Dlsp_dsp=disabled \
        -Dgraphviz=enabled \
        --buildtype=release
 
