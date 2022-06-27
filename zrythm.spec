@@ -103,13 +103,16 @@ and is designed to be intuitive to use.
 %files -f %{name}.lang
 %license COPYING
 %doc README.md CONTRIBUTING.md CHANGELOG.md
-#{_sysconfdir}/bash_completion.d/zrythm
-%{_bindir}/%{name}
-%{_bindir}/zrythm_launch
-#{_datadir}/applications/%{name}.desktop
+%{_bindir}/%{name}*
+%{_libdir}/zrythm/carla/
+%{_libdir}/zrythm/lv2
+%{_datadir}/applications/applications/org.zrythm.Zrythm.desktop
 %{_datadir}/fonts/%{name}
 %{_datadir}/glib-2.0/schemas/*.xml
 %{_iconsdir}/hicolor/scalable/apps/%{name}.svg
 %{_datadir}/%{name}/
 %{_datadir}/mime/packages/org.zrythm.Zrythm-mime.xml
+%{_datadir}/bash-completion/completions/zrythm
+%{_datadir}/fish/vendor_completions.d/zrythm.fish
+%{_datadir}/metainfo/org.zrythm.Zrythm.appdata.xml
 %{_mandir}/man1/zrythm.1.*
