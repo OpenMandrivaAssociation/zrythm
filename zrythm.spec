@@ -11,6 +11,7 @@ BuildRequires: git
 BuildRequires: gettext
 BuildRequires: python
 BuildRequires: sed
+BuildRequires: backstrace-devel
 BuildRequires: ffmpeg-devel
 BuildRequires: ladspa-devel
 BuildRequires: graphviz-devel
