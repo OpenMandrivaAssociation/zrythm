@@ -1,6 +1,6 @@
 Name:          zrythm
 Version:       1.0.0
-Release:       0.beta.2.1.1.0
+Release:       0.beta.2.1.1.1
 Summary:       A highly automated, intuitive, Digital Audio Workstation (DAW)
 Group:         Sound/Editors and Converters
 License:       GPLv3
