@@ -1,11 +1,11 @@
 Name:          zrythm
 Version:       1.0.0
-Release:       0.beta.2.1.1.1
+Release:       0.rc1.0
 Summary:       A highly automated, intuitive, Digital Audio Workstation (DAW)
 Group:         Sound/Editors and Converters
 License:       GPLv3
 URL:           https://www.zrythm.org
-Source0:       https://github.com/zrythm/zrythm/archive/v%{version}-beta.2.1.1/%{name}-%{version}-beta.2.1.1.tar.gz
+Source0:       https://github.com/zrythm/zrythm/archive/v%{version}-rc.1/%{name}-%{version}-rc.1.tar.gz
 
 BuildRequires: appstream
 BuildRequires: appstream-util
@@ -83,7 +83,7 @@ Zrythm can automate plugin parameters using built in LFOs and envelopes
 and is designed to be intuitive to use.
 
 %prep
-%autosetup -n %{name}-%{version}-beta.2.1.1 -p1
+%autosetup -n %{name}-%{version}-rc.1 -p1
 
 %build
 %meson \
