@@ -113,7 +113,7 @@ and is designed to be intuitive to use.
 %{_datadir}/applications/org.zrythm.Zrythm.desktop
 %{_datadir}/fonts/%{name}
 %{_datadir}/glib-2.0/schemas/*.xml
-%{_iconsdir}/hicolor/scalable/apps/%{name}.svg
+#{_iconsdir}/hicolor/scalable/apps/%{name}.svg
 %{_datadir}/%{name}/
 %{_datadir}/mime/packages/org.zrythm.Zrythm-mime.xml
 %{_datadir}/bash-completion/completions/zrythm
