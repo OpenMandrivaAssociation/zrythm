@@ -90,7 +90,7 @@ and is designed to be intuitive to use.
 
 %build
 %meson \
-       -Drtmidi=enabled \
+       -Drtmidi=disabled \
        -Drtaudio=enabled \
        -Dsdl=enabled \
        -Dlsp_dsp=disabled \
