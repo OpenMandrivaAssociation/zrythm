@@ -21,6 +21,7 @@ BuildRequires: ladspa-devel
 BuildRequires: graphviz-devel
 #BuildRequires: carla-devel
 BuildRequires: pkgconfig(carla-host-plugin)
+BuildRequires: pkgconfig(epoxy)
 BuildRequires: pkgconfig(gtk4)
 BuildRequires: pkgconfig(gtksourceview-5)
 BuildRequires: pkgconfig(glib-2.0)
