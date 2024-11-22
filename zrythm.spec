@@ -97,7 +97,7 @@ export CXX=g++
        -Dsdl=enabled \
        -Dlsp_dsp=disabled \
        -Dgraphviz=enabled \
-       -Dbuild_plugins_with_static_libs=false
+       -Dbuild_plugins_with_static_libs=false \
        --buildtype=release
 
 %meson_build
