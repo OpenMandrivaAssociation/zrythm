@@ -89,8 +89,10 @@ and is designed to be intuitive to use.
 %autosetup -n %{name}-%{version} -p1
 
 %build
+export CC=gcc
+export CXX=g++
 %meson \
-       -Drtmidi=disabled \
+       -Drtmidi=enabled \
        -Drtaudio=enabled \
        -Dsdl=enabled \
        -Dlsp_dsp=disabled \
@@ -113,7 +115,7 @@ and is designed to be intuitive to use.
 %{_datadir}/applications/org.zrythm.Zrythm.desktop
 %{_datadir}/fonts/%{name}
 %{_datadir}/glib-2.0/schemas/*.xml
-#{_iconsdir}/hicolor/scalable/apps/%{name}.svg
+%{_iconsdir}/hicolor/scalable/apps/org.zrythm.Zrythm.svg
 %{_datadir}/%{name}/
 %{_datadir}/mime/packages/org.zrythm.Zrythm-mime.xml
 %{_datadir}/bash-completion/completions/zrythm
