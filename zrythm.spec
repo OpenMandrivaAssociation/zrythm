@@ -1,11 +1,11 @@
 Name:          zrythm
 Version:       1.0.0
-Release:       0.beta.2.1.1.1
+Release:       1
 Summary:       A highly automated, intuitive, Digital Audio Workstation (DAW)
 Group:         Sound/Editors and Converters
 License:       GPLv3
 URL:           https://www.zrythm.org
-Source0:       https://github.com/zrythm/zrythm/archive/v%{version}-beta.2.1.1/%{name}-%{version}-beta.2.1.1.tar.gz
+Source0:       https://github.com/zrythm/zrythm/archive/v%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires: appstream
 BuildRequires: appstream-util
@@ -21,6 +21,7 @@ BuildRequires: ladspa-devel
 BuildRequires: graphviz-devel
 #BuildRequires: carla-devel
 BuildRequires: pkgconfig(carla-host-plugin)
+BuildRequires: pkgconfig(epoxy)
 BuildRequires: pkgconfig(gtk4)
 BuildRequires: pkgconfig(gtksourceview-5)
 BuildRequires: pkgconfig(glib-2.0)
@@ -41,8 +42,10 @@ BuildRequires: pkgconfig(lv2)
 BuildRequires: pkgconfig(sndfile)
 BuildRequires: pkgconfig(sdl2)
 BuildRequires: pkgconfig(yaml-0.1)
+BuildRequires: pkgconfig(yyjson)
 BuildRequires: pkgconfig(libcyaml)
 BuildRequires: pkgconfig(samplerate)
+BuildRequires: pkgconfig(soxr)
 BuildRequires: pkgconfig(alsa)
 BuildRequires: pkgconfig(fftw3)
 BuildRequires: pkgconfig(portaudio-2.0)
@@ -83,15 +86,16 @@ Zrythm can automate plugin parameters using built in LFOs and envelopes
 and is designed to be intuitive to use.
 
 %prep
-%autosetup -n %{name}-%{version}-beta.2.1.1 -p1
+%autosetup -n %{name}-%{version} -p1
 
 %build
 %meson \
-       -Drtmidi=enabled \
+       -Drtmidi=disabled \
        -Drtaudio=enabled \
        -Dsdl=enabled \
        -Dlsp_dsp=disabled \
        -Dgraphviz=enabled \
+       -Dbuild_plugins_with_static_libs=false \
        --buildtype=release
 
 %meson_build
@@ -110,7 +114,7 @@ and is designed to be intuitive to use.
 %{_datadir}/applications/org.zrythm.Zrythm.desktop
 %{_datadir}/fonts/%{name}
 %{_datadir}/glib-2.0/schemas/*.xml
-%{_iconsdir}/hicolor/scalable/apps/%{name}.svg
+%{_iconsdir}/hicolor/scalable/apps/org.zrythm.Zrythm.svg
 %{_datadir}/%{name}/
 %{_datadir}/mime/packages/org.zrythm.Zrythm-mime.xml
 %{_datadir}/bash-completion/completions/zrythm
