@@ -89,10 +89,8 @@ and is designed to be intuitive to use.
 %autosetup -n %{name}-%{version} -p1
 
 %build
-export CC=gcc
-export CXX=g++
 %meson \
-       -Drtmidi=enabled \
+       -Drtmidi=disabled \
        -Drtaudio=enabled \
        -Dsdl=enabled \
        -Dlsp_dsp=disabled \
