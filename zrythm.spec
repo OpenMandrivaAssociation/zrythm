@@ -91,6 +91,12 @@ and is designed to be intuitive to use.
 %autosetup -n %{name}-%{version} -p1
 
 %build
+# gcc specs inject -latomic_asneeded; the bundled manpage scanner uses g++
+mkdir -p .om-stub
+echo '/* stub for bogus -latomic_asneeded */' | %{__cc} -shared -fPIC -o .om-stub/libatomic_asneeded.so -x c - -nostdlib 2>/dev/null || \
+	echo 'INPUT(-latomic)' > .om-stub/libatomic_asneeded.so
+export LIBRARY_PATH="$(pwd)/.om-stub:${LIBRARY_PATH:-}"
+export LD_LIBRARY_PATH="$(pwd)/.om-stub:${LD_LIBRARY_PATH:-}"
 %meson \
        -Drtmidi=disabled \
        -Drtaudio=enabled \
