@@ -60,8 +60,8 @@ BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: pkgconfig(Qt5Gui)
 BuildRequires: pkgconfig(Qt5Widgets)
 BuildRequires: pkgconfig(libxdot)
-BuildRequires: python3dist(sphinx)
-BuildRequires: python3dist(pypandoc)
+BuildRequires: python%{pyver}dist(sphinx)
+BuildRequires: python%{pyver}dist(pypandoc)
 BuildRequires: pkgconfig(libzstd)
 BuildRequires: pkgconfig(lsp-dsp-lib)
 BuildRequires: pkgconfig(vamp)
@@ -71,6 +71,8 @@ BuildRequires: help2man
 BuildRequires: texi2html
 BuildRequires: xdg-utils
 BuildRequires: meson
+BuildRequires: ninja
+BuildRequires: make
 Requires:      carla
 Requires:      ladspa
 Requires:      lilv
