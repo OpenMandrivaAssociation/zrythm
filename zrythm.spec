@@ -1,6 +1,6 @@
 Name:          zrythm
 Version:       1.0.0
-Release:       5
+Release:       6
 Summary:       A highly automated, intuitive, Digital Audio Workstation (DAW)
 Group:         Sound/Editors and Converters
 License:       GPLv3
@@ -73,6 +73,7 @@ BuildRequires: xdg-utils
 BuildRequires: meson
 BuildRequires: ninja
 BuildRequires: make
+BuildRequires: atomic-devel
 Requires:      carla
 Requires:      ladspa
 Requires:      lilv
@@ -91,12 +92,6 @@ and is designed to be intuitive to use.
 %autosetup -n %{name}-%{version} -p1
 
 %build
-# gcc specs inject -latomic_asneeded; the bundled manpage scanner uses g++
-mkdir -p .om-stub
-echo '/* stub for bogus -latomic_asneeded */' | %{__cc} -shared -fPIC -o .om-stub/libatomic_asneeded.so -x c - -nostdlib 2>/dev/null || \
-	echo 'INPUT(-latomic)' > .om-stub/libatomic_asneeded.so
-export LIBRARY_PATH="$(pwd)/.om-stub:${LIBRARY_PATH:-}"
-export LD_LIBRARY_PATH="$(pwd)/.om-stub:${LD_LIBRARY_PATH:-}"
 %meson \
        -Drtmidi=disabled \
        -Drtaudio=enabled \
