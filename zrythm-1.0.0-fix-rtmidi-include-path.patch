@@ -1,0 +1,48 @@
+diff -rupN zrythm-1.0.0.old/inc/dsp/ext_port.h zrythm-1.0.0/inc/dsp/ext_port.h
+--- zrythm-1.0.0.old/inc/dsp/ext_port.h	2024-11-21 12:39:58.000000000 +0100
++++ zrythm-1.0.0/inc/dsp/ext_port.h	2026-10-30 18:02:32.895227535 +0100
+@@ -25,7 +25,7 @@
+ #endif
+ 
+ #ifdef HAVE_RTMIDI
+-#  include <rtmidi_c.h>
++#  include <rtmidi/rtmidi_c.h>
+ #endif
+ 
+ typedef struct WindowsMmeDevice  WindowsMmeDevice;
+diff -rupN zrythm-1.0.0.old/inc/dsp/port.h zrythm-1.0.0/inc/dsp/port.h
+--- zrythm-1.0.0.old/inc/dsp/port.h	2024-11-21 12:39:58.000000000 +0100
++++ zrythm-1.0.0/inc/dsp/port.h	2026-10-30 18:03:40.920728731 +0100
+@@ -25,7 +25,7 @@
+ #endif
+ 
+ #ifdef HAVE_RTMIDI
+-#  include <rtmidi_c.h>
++#  include <rtmidi/rtmidi_c.h>
+ #endif
+ 
+ #ifdef HAVE_RTAUDIO
+diff -rupN zrythm-1.0.0.old/inc/dsp/rtmidi_device.h zrythm-1.0.0/inc/dsp/rtmidi_device.h
+--- zrythm-1.0.0.old/inc/dsp/rtmidi_device.h	2024-11-21 12:39:58.000000000 +0100
++++ zrythm-1.0.0/inc/dsp/rtmidi_device.h	2026-10-30 18:03:24.360304134 +0100
+@@ -14,7 +14,7 @@
+ #  include <stdint.h>
+ 
+ #  include "zix/ring.h"
+-#  include <rtmidi_c.h>
++#  include <rtmidi/rtmidi_c.h>
+ 
+ typedef struct Port Port;
+ 
+diff -rupN zrythm-1.0.0.old/src/dsp/engine_rtmidi.c zrythm-1.0.0/src/dsp/engine_rtmidi.c
+--- zrythm-1.0.0.old/src/dsp/engine_rtmidi.c	2024-11-21 12:39:58.000000000 +0100
++++ zrythm-1.0.0/src/dsp/engine_rtmidi.c	2026-10-30 18:04:20.105262279 +0100
+@@ -25,7 +25,7 @@
+ #  include <glib/gi18n.h>
+ #  include <gtk/gtk.h>
+ 
+-#  include <rtmidi_c.h>
++#  include <rtmidi/rtmidi_c.h>
+ 
+ /**
+  * Sets up the MIDI engine to use Rtmidi.

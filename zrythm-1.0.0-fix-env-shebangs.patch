@@ -1,0 +1,27 @@
+diff -rupN zrythm-1.0.0.old/data/zrythm_gdb.in zrythm-1.0.0/data/zrythm_gdb.in
+--- zrythm-1.0.0.old/data/zrythm_gdb.in	2024-11-21 12:39:58.000000000 +0100
++++ zrythm-1.0.0/data/zrythm_gdb.in	2026-10-30 18:16:09.303739750 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env sh
++#!/usr/bin/sh
+ # SPDX-FileCopyrightText: © 2021-2022 Alexandros Theodotou <alex@zrythm.org>
+ # SPDX-License-Identifier: LicenseRef-ZrythmLicense
+ 
+diff -rupN zrythm-1.0.0.old/data/zrythm_launch.in zrythm-1.0.0/data/zrythm_launch.in
+--- zrythm-1.0.0.old/data/zrythm_launch.in	2024-11-21 12:39:58.000000000 +0100
++++ zrythm-1.0.0/data/zrythm_launch.in	2026-10-30 18:16:22.631918182 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env sh
++#!/usr/bin/sh
+ # SPDX-FileCopyrightText: © 2021 Alexandros Theodotou <alex@zrythm.org>
+ # SPDX-License-Identifier: LicenseRef-ZrythmLicense
+ 
+diff -rupN zrythm-1.0.0.old/data/zrythm_valgrind.in zrythm-1.0.0/data/zrythm_valgrind.in
+--- zrythm-1.0.0.old/data/zrythm_valgrind.in	2024-11-21 12:39:58.000000000 +0100
++++ zrythm-1.0.0/data/zrythm_valgrind.in	2026-10-30 18:16:37.984057860 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env sh
++#!/usr/bin/sh
+ # SPDX-FileCopyrightText: © 2021 Alexandros Theodotou <alex@zrythm.org>
+ # SPDX-License-Identifier: LicenseRef-ZrythmLicense
+ 
